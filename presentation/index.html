@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Web-based System for Ordering and Managing 3D Prints</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<img src="./img/vilniustech.png" width="20%" />
+				<h3>Web-based System for Ordering and Managing 3D Prints</h3>
+				<p>Bachelor's Thesis</p>
+				<p>Zehra Irem Kuyucu, ITVfu-21</p>
+				<small>Vilnius, 2025</small>
+			</section>
+
+			<section>
+				<h4>Problems Addressed</h4>
+				<ol>
+					<li>Monetize 3D printers.</li>
+					<li>Automate 3D print order workflows.</li>
+				</ol>
+			</section>
+
+			<section>
+				<h4>Tasks Performed</h4>
+				<ul>
+					<li>Analysis of existing solutions, the market and relevant tech.</li>
+					<li>Requirement and use case analysis.</li>
+					<li>System development.</li>
+					<li>System documentation.</li>
+					<li>System testing.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h4>System Architecture</h4>
+				<img src="./img/simplified-arch.png" />
+			</section>
+
+			<section>
+				<h4>System Components</h4>
+				<img src="./img/system-arch.png" />
+			</section>
+
+			<section>
+				<h4>Database Schema</h4>
+				<img src="./img/database.png" width="50%" />
+			</section>
+
+			<section>
+				<h4>Languages and Frameworks Used</h4>
+				<ul>
+					<li>Go for the backend</li>
+					<li>Vue.js and TypeScript for the frontend</li>
+					<li>WebGL for visualizations</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>System Features</h3>
+				<p>Implemented based on the requirements.</p>
+			</section>
+
+			<section>
+				<h4>Automated print evaluation and pricing</h4>
+				<video loop muted autoplay>
+					<source src="./img/autoprice.mp4" type="video/mp4">
+				</video>
+			</section>
+
+			<section>
+				<h4>STL and G-code Previews</h4>
+				<video loop muted autoplay>
+					<source src="./img/gcodeview.mp4" type="video/mp4">
+				</video>
+
+			</section>
+
+			<section>
+				<h4>Payment via Stripe</h4>
+				<video loop muted autoplay>
+					<source src="./img/stripe.mp4" type="video/mp4">
+				</video>
+			</section>
+
+			<section>
+				<h4>Order Management</h4>
+				<img src="./img/orders-light.png" />
+			</section>
+
+			<section>
+				<h4>Email Notifications</h4>
+				<img src="./img/order-email.png" style="width: 50%" />
+			</section>
+
+			<section>
+				<h4>Inventory Management</h4>
+				<img src="./img/profiles.png" style="width: 50%" />
+			</section>
+
+			<section>
+				<h3>Conclusions</h3>
+			</section>
+
+			<section>
+				<h4>Key Achievements</h4>
+				<ul>
+					<li><b>Streamlined Workflow:</b> Automated file validation, parameter adjustment, slicing, and cost
+						estimation.</li>
+					<li><b>Enhanced User Experience:</b> Intuitive web interface with real-time 3D model visualization.
+					</li>
+					<li><b>Improved Efficiency:</b> Automated workflow management and integrated inventory control.</li>
+					<li><b>Flexible & Future-Proof:</b> Supports various printer models (initially Bambu Lab focused)
+						and slicers (e.g., Bambu Studio, Orca Slicer).</li>
+				</ul>
+			</section>
+
+			<section>
+				<h4>Future Directions:</h4>
+				<ul>
+					<li>Expand payment gateway options and file format support.</li>
+					<li>Introduce advanced configuration options (infill, user comments), multi-object/plate support,
+						customer accounts, multi-printer/inventory management for print farms, and caching of sliced
+						files.</li>
+					<li>Implement a robust automated testing framework.</li>
+				</ul>
+			</section>
+
+			<section>
+				<p>Thank you for listening.</p>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+		});
+	</script>
+</body>
+
+</html>
